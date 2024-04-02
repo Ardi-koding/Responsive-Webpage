@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	width: 500px;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav a {
+	text-transform: uppercase;
+}
+
+/* --- Font & Color --- */
+
+/* Oswald Bold */
+.oswald--bold {
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.ob--18px {
+	font-size: 1.125rem;
+}
+
+.ob--90px {
+	font-size: 5.625rem;
+}
+
+.ob--24px {
+	font-size: 1.5rem;
+}
+
+.ob--30px {
+	font-size: 1.875rem;
+}
+
+.ob--36px {
+	font-size: 2.25rem;
+}
+
+.ob--21px {
+	font-size: 1.3125rem;
+}
+
+.footer__text h3,
+.footer__nav h3 {
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.3125rem;
+}
+
+/* Montserrat Regular */
+.montserrat--regular {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.mr--24px {
+	font-size: 1.5rem;
+}
+
+.mr--18px {
+	font-size: 1.125rem;
+}
+
+.mr--21px {
+	font-size: 1.3125rem;
+}
+
+.mr--16px {
+	font-size: 1rem;
+}
+
+.footer__text p {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+}
+
+/* COLOR  */
+
+.color--gold {
+	color: #a59678;
+}
+
+header {
+	background-color: #2e323f;
+}
+
+.nav a,
+.hero,
+.hero__button,
+.sidebar,
+footer,
+.footer__a {
+	color: white;
+}
+
+.hero__button {
+	background-color: #a59678;
+}
+
+.hero,
+footer,
+.sidebar {
+	background-color: #3b4050;
+}
+
+.threeContent {
+	background-color: #f1f1f1;
+}
+
+.content {
+	background-color: #ffffff;
+}
+
+/* --- Layout --- */
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+	padding: 1em;
+}
+
+/* NAV */
+.nav__toggle {
+	cursor: pointer;
+	width: 3em;
+	height: 3em;
+	background-color: #a59678;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	position: absolute;
+	left: 3em;
+	top: 2em;
+}
+
+.hamburger {
+	width: 60%;
+	position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+	display: block;
+	margin: 0 auto;
+	height: 3px;
+	background-color: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+	width: 100%;
+	content: "";
+	display: block;
+	position: absolute;
+}
+
+.hamburger::before {
+	top: -6px;
+}
+
+.hamburger::after {
+	top: 6px;
+}
+
+header {
+	min-height: 6em;
+}
+
+nav {
+	text-align: center;
+}
+
+.nav__li {
+	padding-bottom: 2em;
+}
+
+.nav__li--last {
+	padding-bottom: 1em;
+}
+
+/* Hero */
+
+.hero__title {
+	margin-top: 0;
+}
