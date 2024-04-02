@@ -40,11 +40,11 @@ nav a {
 }
 
 .ob--90px {
-	font-size: 5.625rem;
+	font-size: 3.125rem;
 }
 
 .ob--24px {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 .ob--30px {
@@ -77,7 +77,7 @@ nav a {
 }
 
 .mr--24px {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .mr--18px {
@@ -149,10 +149,6 @@ body {
 	margin: 0 auto;
 }
 
-header {
-	padding: 1em;
-}
-
 /* NAV */
 .nav__toggle {
 	cursor: pointer;
@@ -203,6 +199,7 @@ header {
 
 nav {
 	text-align: center;
+	display: none;
 }
 
 .nav__li {
@@ -213,8 +210,75 @@ nav {
 	padding-bottom: 1em;
 }
 
+.nav__a {
+	transition: opacity 250ms ease;
+}
+
+.nav__a:hover,
+.nav__a:focus {
+	opacity: 0.75;
+	border-bottom: 2px solid white;
+}
+
+.nav__a:active {
+	color: #a59678;
+	border-bottom: 2px solid #a59678;
+}
+
+.nav__a--last {
+	padding: 0.5em 1em;
+	background-color: #a59678;
+	border-radius: 1em;
+}
+
+.nav__a--last:hover,
+.nav__a--last:focus {
+	border: none;
+}
+
+.nav__a--last:active {
+	color: #2e323f;
+}
+
 /* Hero */
+
+.hero {
+	padding: 2em 0 3em 0;
+}
 
 .hero__title {
 	margin-top: 0;
+}
+
+.hero__button {
+	border: 0;
+	padding: 0.25em 1em;
+	border-radius: 1em;
+	cursor: pointer;
+	transition: opacity 250ms ease;
+}
+
+.hero__button:hover,
+.hero__focus {
+	opacity: 0.75;
+}
+
+.hero__button:active {
+	color: #3b4050;
+}
+
+/* Three Contents */
+
+@media (min-width: 700px) {
+	.ob--90px {
+		font-size: 5.625rem;
+	}
+
+	.mr--24px {
+		font-size: 1.5rem;
+	}
+
+	.ob--24px {
+		font-size: 1.5rem;
+	}
 }

@@ -5,9 +5,9 @@ const nav = document.querySelector("nav");
 let isMoved = false;
 function toggleButton() {
 	if (!isMoved) {
-		nav.style.display = "none";
-	} else {
 		nav.style.display = "flow-root";
+	} else {
+		nav.style.display = "none";
 	}
 	isMoved = !isMoved;
 	console.log(isMoved);
