@@ -149,6 +149,10 @@ body {
 	margin: 0 auto;
 }
 
+header {
+	padding: 1em 0;
+}
+
 /* NAV */
 .nav__toggle {
 	cursor: pointer;
@@ -252,7 +256,7 @@ nav {
 
 .hero__button {
 	border: 0;
-	padding: 0.25em 1em;
+	padding: 0.25em 0.75em;
 	border-radius: 1em;
 	cursor: pointer;
 	transition: opacity 250ms ease;
@@ -268,6 +272,8 @@ nav {
 }
 
 /* Three Contents */
+
+
 
 @media (min-width: 700px) {
 	.ob--90px {
