@@ -1,4 +1,4 @@
-const hamburger = document.querySelector(".nav__toggle");
+const hamburger = document.querySelector(".button__toggle");
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 
